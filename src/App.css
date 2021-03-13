@@ -1,38 +1,207 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.navbar {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 218, 9);
+  
+}
+.navbar .left-navbar {
+  width: 50%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.navbar .left-navbar h2 {
+  color: white;
+  margin-left: 10px;
+  font-family: 'Ubuntu', sans-serif;
+ 
+}
+.navbar .left-navbar img {
+  height: 40px;
+  margin-left: 7px;
+  width: 40px;
+  border-radius: 8px;
+  padding: 3px 2px;
+}
+.navbar .right-navbar {
+  width: 20%;
+  display: flex;
+  align-items: center;
+ 
+  
+  
+}
+
+.navbar .right-navbar .refresh {
+  text-align: right;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.navbar .right-navbar input {
   text-align: center;
+  padding: 4px 4px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  
+}
+.navbar .refresh:hover {
+  transform: scale(1.13);
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+  width: 100%;
+  background-color: rgb(139, 173, 69);
+  position: absolute;
+  margin-top: 63vh;
+  text-align: center;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer span {
+  font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.createnote {
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  width: 20%;
+  margin-top: 20px;
+  
+}
+.createnote form {
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 3px 5px 10px  rgb(255, 218, 9);
+  
+}
+.createnote form input {
+  padding: 4px 5px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 550;
+ 
+  border: none;
+  color: rgb(95, 94, 94);
+  text-transform: uppercase;
+  border-top: 3px solid rgb(255, 218, 9);
+
+}
+.createnote form textarea {
+  margin-top: 0;
+  padding: 4px 4px;
+  outline: none;
+  font-size: 17px;
+
+  border: none;
+  
+  color: rgb(95, 94, 94);
+}
+.createnote form Button {
+  position: absolute;
+  margin-top: 125px;
+  margin-left: 270px;
+  
+  outline: none;
+  
+}
+.createnote form Button .addicon{
+  padding: 4px 4px;
+  color: rgb(255, 218, 9);
+  text-align: center;
+  font-size: 39px;
+  font-weight: 700;
+  background-color:rgb(255, 218, 9) ;
   color: white;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  
+  border-radius: 50px;
+ 
+}
+.createnote form Button .addicon:hover {
+  transform: scale(1.11);
+  
+  
+}
+.note {
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 30px;
+ 
+}
+.note .noteelem {
+  padding: 4px 6px;
+  border-top: 2px solid rgb(255, 218, 9);
+  width: 39vh;
+  height: 27vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 3px 5px  rgb(255, 218, 9);
+  border-radius: 7px;
+  margin: 21px 21px;
+  
+}
+.noteelem h3 {
+  margin-top: 5px;
+  font-size: 19px;
+  width: 100%;
+  background-color: rgb(255, 218, 9);
+  font-weight: 600;
+  color: rgb(95, 94, 94);
+  text-align: center;
+  
+}
+.noteelem p {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 16px;
+  color: rgb(95, 94, 94);
+  
+}
+.noteelem Button {
+  position: absolute;
+  width: 4%;
+  margin-top: 172px;
+  margin-left: 255px;
+  
+  
+  
+}
+.noteelem Button .deleteicon {
+  padding: 4px 4px;
+  color: rgb(255, 218, 9);
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+  background-color:rgb(255, 218, 9) ;
+  color: white;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  
+  border-radius: 50px;
+}
+.noteelem Button .deleteicon:hover {
+  transform: scale(1.11);
+}
+.noteelem:hover,.createnote:hover {
+  transform: scale(1.09);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
